@@ -1,0 +1,147 @@
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  height: 70px;
+  display: flex;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: Roboto, Arial, Sans-serif;
+}
+.menu-bar {
+  width: 35px;
+  height: 30px;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5%;
+  flex-direction: row;
+}
+.youtube-logo {
+  width: 130px;
+  margin-left: 25px;
+  height: 70px;
+}
+.middle-section {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+.search {
+  display: flex;
+  flex: 1;
+}
+.search-bar {
+  height: 38px;
+  flex: 1;
+  min-width: 1px;
+  outline: none;
+  padding-left: 2%;
+  border: gray solid 1px;
+}
+.search-bar::placeholder {
+  padding-right: 5%;
+  font-size: 16.5px;
+}
+.search-logo {
+  color: gray;
+  cursor: pointer;
+  width: 19px;
+  padding-top: 2.2%;
+  padding-bottom: 2.1%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  border-top: gray solid 1px;
+  border-right: gray solid 1px;
+  border-bottom: gray solid 1px;
+  box-shadow: inset 1px 1px 25px rgba(128, 128, 128, 0.1);
+}
+.search-logo:hover {
+  box-shadow: inset 1px 1px 25px rgba(128, 128, 128, 0.2);
+}
+.search-logo:active {
+  box-shadow: inset 1px 1px 25px rgba(128, 128, 128, 0.3);
+}
+.mic {
+  width: 20px;
+  height: 25px;
+  border-radius: 20px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
+}
+.right-section {
+  display: flex;
+  position: relative;
+  margin-right: 15px;
+  flex-direction: row;
+  column-gap: 25px;
+  align-items: center;
+}
+.create {
+  width: 30px;
+  height: 30px;
+}
+.app-bar {
+  width: 20px;
+}
+.notification {
+  width: 23px;
+}
+.account-profile {
+  width: 28px;
+}
+.search-hover,
+.mic-hover,
+.create-hover,
+.app-bar-hover,
+.notification-hover {
+  position: absolute;
+  opacity: 0;
+  border-radius: 4px;
+  font-size: 13px;
+  color: white;
+  padding: 1.5%;
+  bottom: -20px;
+  background-color: gray;
+}
+.create-hover,
+.app-bar-hover,
+.notification-hover {
+  padding: 3%;
+}
+.search-hover {
+  right: 40px;
+}
+.mic-hover {
+  right: -10px;
+}
+.middle-section:hover.middle-section div {
+  opacity: 1;
+  transition: 0.5s;
+}
+.right-section:hover .create-hover,
+.right-section:hover .app-bar-hover,
+.right-section:hover .notification-hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.create-hover {
+  bottom: -10px;
+  right: 140px;
+}
+.app-bar-hover {
+  bottom: -10px;
+  right: 80px;
+}
+.notification-hover {
+  bottom: -10px;
+  right: 0.75px;
+}
